@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Music } from 'lucide-react';
 import { Link } from './Navbar.styles';
+import { WhatsAppLogo } from '../whatsappLOGO/wp';
 
 export function Navbar() {
   const [isScrolled, setIsScrolled] = useState(false);
@@ -15,8 +16,8 @@ export function Navbar() {
   }, []);
 
   return (
-    <nav className={`fixed w-full z-50 transition-all duration-300 ${
-      isScrolled ? 'bg-navy-950/80 backdrop-blur-lg' : 'bg-transparent'
+    <nav style={{marginTop:"-15px"}} className={`fixed  w-full z-50 transition-all duration-300 ${
+      isScrolled ?  'bg-navy-950/80 backdrop-blur-lg' : 'bg-transparent'
     }`}>
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-20">
@@ -31,7 +32,7 @@ export function Navbar() {
             <Link href="#about">About</Link>
             <Link href="#blog">Blog</Link>
           </div>
-
+        
           <button className="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-6 py-2 rounded-full hover:opacity-90 transition-opacity">
             Login
           </button>

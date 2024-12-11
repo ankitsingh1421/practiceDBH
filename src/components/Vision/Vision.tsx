@@ -1,6 +1,48 @@
-import React from 'react';
+import React, { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-import { VideoPlayer } from './VideoPlayer';
+
+export function VideoPlayer() {
+  const videoRef = useRef(null);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        const video = videoRef.current;
+        if (entry.isIntersecting) {
+          video?.play();
+        } else {
+          video?.pause();
+        }
+      },
+      { threshold: 0.5 } // Adjust the threshold as needed
+    );
+
+    const videoElement = videoRef.current;
+    if (videoElement) observer.observe(videoElement);
+
+    return () => {
+      if (videoElement) observer.unobserve(videoElement);
+    };
+  }, []);
+
+  return (
+    <div className="relative w-full h-full rounded-2xl overflow-hidden group">
+      <video
+        ref={videoRef}
+        className="w-full h-full object-cover rounded-2xl"
+        controls
+        muted // Keep the video muted initially
+        preload="metadata"
+      >
+        <source
+          src="https://www.w3schools.com/html/mov_bbb.mp4" // Demo video URL
+          type="video/mp4"
+        />
+        Your browser does not support the video tag.
+      </video>
+    </div>
+  );
+}
 
 export function Vision() {
   return (
@@ -43,6 +85,7 @@ export function Vision() {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
+            style={{ marginLeft: "30%", marginTop: "30px", height: "300px", width: "600px" }}
             className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl shadow-purple-500/20"
           >
             <VideoPlayer />
