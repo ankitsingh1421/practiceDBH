@@ -4,12 +4,12 @@ import { Logo } from './Logo';
 
 export function Hero() {
   return (
-    <div className="relative min-h-screen bg-navy-950 overflow-hidden">
+    <div className="relative min-h-screen  overflow-hidden "id='home'>
       {/* Gradient Background */}
-      <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-pink-900/20" />
+      {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-pink-900/20" /> */}
       
       {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-32">
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-60">
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">

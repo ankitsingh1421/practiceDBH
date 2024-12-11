@@ -74,13 +74,15 @@ const About = () => {
       {/* Team Section */}
 <div className="flex flex-col items-center justify-center text-center mt-20">
   <div className="w-[51rem] max-sm:w-[19rem] max-md:w-[35rem] max-lg:w-[42rem]">
-    <h3 data-aos="fade-up" className="gradient-text font-heading leading-[3.8rem] text-[44px] max-sm:text-3xl font-semibold">
-      Say Hello to Our Team Members
+    <h3 data-aos="fade-up" className="flex justify-center gradient-text text-white font-heading leading-[3.8rem] text-[44px] max-sm:text-3xl font-semibold">
+      <p className='text-purple-500'>Say</p>
+      <p className='pl-3'>Hellow</p>
+      <p className='text-purple-500 pl-3'>to Our Team Members</p>
     </h3>
     {/* Removed margin from the h5 element to eliminate space */}
-    <h5 data-aos="fade-up" className="text-[22px] leading-8 max-sm:text-sm mt-1">
+    {/* <h5 data-aos="fade-up" className="text-[22px] leading-8 max-sm:text-sm mt-1 text-white">
       Meet the skilled professionals who drive our business forward
-    </h5>
+    </h5> */}
   </div>
 </div>
 <div className="relative flex flex-col items-center bg-[url('https://d20rzw95v74l8a.cloudfront.net/aboutus/tile-bg.webp')] bg-cover bg-center h-auto py-12 mt-3">

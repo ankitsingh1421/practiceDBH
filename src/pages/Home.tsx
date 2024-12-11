@@ -15,10 +15,9 @@ export function Home() {
       <Hero />
       <Welcome />
       <Vision />
-      <Courses/>
       <Offers/>
       <Internship/>
-      <About/>
+      <About/> 
     </div>
   );
 }
