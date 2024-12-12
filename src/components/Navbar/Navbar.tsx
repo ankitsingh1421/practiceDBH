@@ -25,7 +25,7 @@ export function Navbar() {
         <div className="flex items-center justify-between h-20">
           <div className="flex items-center space-x-2">
             <Music className="w-8 h-8 text-purple-500" />
-            <span className="text-white text-xl font-bold">Decoding Bollywood Hits</span>
+            <span className="text-white text-xl font-bold pl-4">Decoding <br /> Bollywood Hits</span>
           </div>
           
           <div className="hidden md:flex items-center space-x-8">

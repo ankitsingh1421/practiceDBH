@@ -1,128 +1,64 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import AOS from 'aos';
-import './About.css'
 import 'aos/dist/aos.css';
-import Pawan from '../../TeamMemberImage/Pawan.jpeg'
+import './About.css';
 
 const About = () => {
- 
-  const [activeSection, setActiveSection] = useState(0); // Default section is 'Learn'
-
-  const handleArrowClick = () => {
-    setActiveSection((prev) => (prev + 1) % 3); // Cycle through 0, 1, 2
-  };
-
-  const sections = [
-    {
-      title: "LEARN",
-      text: "from the most renowned music gurus and Artium certified teachers",
-    },
-    {
-      title: "PRACTICE",
-      text: "music anytime with personal teachers and online studio tools to perfect your skill",
-    },
-    {
-      title: "PERFORM",
-      text: "like a pro in front of a huge audience. Artium showcase is waiting for you!",
-    },
-  ];
-
-  const imageSets = [
-    [
-      { src: '/founder.png', alt: 'Sanskar saswat ' , role:"FOUNDER",url:"https://www.linkedin.com/in/sanskar-saswat-47a61725a/"},
-      { src: '', alt: 'ceo_name',role:"CEO" },
-      { src: '', alt: 'name.. ' ,role:"DIRECTOR"},
-      { src: '/', alt: 'name... ',role:"MANAGER" },
-
-    ]
-  ];
-  
-  const [currentIndex, setCurrentIndex] = useState(0);
-  const [intervalId, setIntervalId] = useState(null);
-
-
-  const handleButtonClick = (index) => {
-    setCurrentIndex(index);
-
-
-    if (intervalId) {
-      clearInterval(intervalId);
-    }
-
-
-    const id = setInterval(() => {
-      setCurrentIndex((prevIndex) => (prevIndex + 1) % imageSets.length);
-    }, 2000); // Change every 1 second
-
-    setIntervalId(id);
-  };
-
-  useEffect(() => {
-
-    return () => {
-      if (intervalId) {
-        clearInterval(intervalId);
-      }
-    };
-  }, [intervalId]);
-
   useEffect(() => {
     AOS.init({ easing: 'ease-in-sine', duration: 800, delay: 0 });
   }, []);
+
+  const teamMembers = [
+    {
+      name: 'Srijan Sakshi',
+      role: 'Operations & Event Management',
+      image: 'https://www.masala.com/cloud/2021/08/01/eNLV5Bq0-SRKMain-1200x1345.jpg',
+    },
+    {
+      name: 'Sanskar Saswat',
+      role: 'Founder',
+      image: 'https://www.masala.com/cloud/2021/08/01/eNLV5Bq0-SRKMain-1200x1345.jpg',
+    },
+    {
+      name: 'Roopkatha Roy',
+      role: 'Co-Founder',
+      image: 'https://www.masala.com/cloud/2021/08/01/eNLV5Bq0-SRKMain-1200x1345.jpg',
+    },
+    {
+      name: 'Ankit Singh',
+      role: 'Web Development',
+      image: 'https://www.masala.com/cloud/2021/08/01/eNLV5Bq0-SRKMain-1200x1345.jpg',
+    },
+  ];
+
   return (
-    <div id='about'>
-      {/* Team Section */}
-<div className="flex flex-col items-center justify-center text-center mt-20">
-  <div className="w-[51rem] max-sm:w-[19rem] max-md:w-[35rem] max-lg:w-[42rem]">
-    <h3 data-aos="fade-up" className="flex justify-center gradient-text text-white font-heading leading-[3.8rem] text-[44px] max-sm:text-3xl font-semibold">
-      <p className='text-purple-500'>Say</p>
-      <p className='pl-3'>Hellow</p>
-      <p className='text-purple-500 pl-3'>to Our Team Members</p>
-    </h3>
-    {/* Removed margin from the h5 element to eliminate space */}
-    {/* <h5 data-aos="fade-up" className="text-[22px] leading-8 max-sm:text-sm mt-1 text-white">
-      Meet the skilled professionals who drive our business forward
-    </h5> */}
-  </div>
-</div>
-<div className="relative flex flex-col items-center bg-[url('https://d20rzw95v74l8a.cloudfront.net/aboutus/tile-bg.webp')] bg-cover bg-center h-auto py-12 mt-3">
-  {/* Image Grid */}
-  <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 max-w-7xl mx-auto">
-    {imageSets[currentIndex].map((image, idx) => (
-      <a
-        key={idx}
-        target="_blank"
-        rel="noopener noreferrer"
-        className="flex flex-col items-center justify-center max-w-[14.7rem] border-colorD border-2 p-4 rounded-xl bg-bgColorA transition-transform duration-500 transform hover:scale-105 hover:translate-y-1"
-        href={image.url}
-      >
-        {/* Display the image */}
-        <img
-          alt={image.alt}
-          src={image.src}
-          width="200"
-          height="150"
-          className="h-[150px] w-auto"
-        />
-        <p> {image.alt}</p>
-        <p className='text-gray-500'>{image.role}</p>
-      </a>
-    ))}
-  </div>
+    <div id="about" className="py-20 bg-darkBlue ">
+      {/* Header Section */}
+      <div className="text-center mb-10">
+        <h3 data-aos="fade-up" className="text-5xl font-bold text-white">
+          <span className="text-purple-500 ">Say</span> Hello
+          <span className="text-purple-500 pl-3">To Our Team</span>
+        </h3>
+      </div>
 
-  <div className="flex mt-10 absolute bottom-5 space-x-2">
-    <button
-      className="w-3 h-3 rounded-full border-2 border-lightdark"
-      onClick={() => handleButtonClick(0)}
-    ></button>
-    <button
-      className="w-3 h-3 rounded-full bg-lightGrey"
-      onClick={() => handleButtonClick(1)}
-    ></button>
-  
-  </div>
-</div>
-
+      {/* Team Members Section */}
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 px-8 max-w-8xl mx-auto ">
+        {teamMembers.map((member, idx) => (
+          <div
+            key={idx}
+            data-aos="fade-up"
+            className=" flex flex-col items-center bg-gradient-to-b from-indigo-500 to-purple-600 rounded-3xl p-6 shadow-lg text-center hover:scale-105 transform transition-all duration-300"
+          >
+            <h4 className="text-3xl font-semibold text-white mb-2">{member.name}</h4>
+            <img
+              src={member.image}
+              alt={member.name}
+              className="rounded-full w-64 h-64 mb-4 "
+            />
+            <p className="text-2xl text-gray-200">{member.role}</p>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };

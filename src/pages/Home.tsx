@@ -7,6 +7,9 @@ import Courses from '../components/Courses/Courses';
 import { Offers } from '../components/Offers/offers';
 import Internship from '../Internship/Internship';
 import About from '../components/about/About';
+import Contact from '../components/Contact/Contact';
+import Footer from '../components/Footer/Footer';
+
 
 export function Home() {
   return (
@@ -18,6 +21,8 @@ export function Home() {
       <Offers/>
       <Internship/>
       <About/> 
+      <Contact/>
+      <Footer/>
     </div>
   );
 }
