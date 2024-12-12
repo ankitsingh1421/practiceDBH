@@ -12,22 +12,22 @@ const About = () => {
     {
       name: 'Srijan Sakshi',
       role: 'Operations & Event Management',
-      image: 'https://www.masala.com/cloud/2021/08/01/eNLV5Bq0-SRKMain-1200x1345.jpg',
+      image: 'sakshi.jpeg',
     },
     {
       name: 'Sanskar Saswat',
       role: 'Founder',
-      image: 'https://www.masala.com/cloud/2021/08/01/eNLV5Bq0-SRKMain-1200x1345.jpg',
+      image: 'sanskar.jpeg',
     },
     {
       name: 'Roopkatha Roy',
       role: 'Co-Founder',
-      image: 'https://www.masala.com/cloud/2021/08/01/eNLV5Bq0-SRKMain-1200x1345.jpg',
+      image: 'roop.jpeg',
     },
     {
       name: 'Ankit Singh',
-      role: 'Web Development',
-      image: 'https://www.masala.com/cloud/2021/08/01/eNLV5Bq0-SRKMain-1200x1345.jpg',
+      role: 'Web Developer',
+      image: 'ankit.jpeg',
     },
   ];
 

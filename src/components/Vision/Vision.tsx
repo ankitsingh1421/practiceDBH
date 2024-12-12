@@ -35,7 +35,7 @@ export function VideoPlayer() {
         preload="metadata"
       >
         <source
-          src="https://www.w3schools.com/html/mov_bbb.mp4" // Demo video URL
+          src="WhatsApp Video 2024-12-12 at 21.34.45.mp4" // Demo video URL
           type="video/mp4"
         />
         Your browser does not support the video tag.

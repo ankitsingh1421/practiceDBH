@@ -13,8 +13,8 @@ const Footer: React.FC = () => {
       <div className="footer-container">
         <div className="footer-section">
           <h4>Contact Us</h4>
-          <p>Email: pawanbeniwal012@gmail.com</p>
-          <p>Phone: 7900956259</p>
+          <p>Email: info@decodingbollywoodhits.in</p>
+          <p>Phone: 9836311375</p>
         </div>
         <div className="footer-section">
           <h4>Follow Us</h4>
@@ -58,7 +58,7 @@ const Footer: React.FC = () => {
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 Notes Website. All rights reserved.</p>
+        <p>&copy; 2024 DecodingBollywoodHits website. All rights reserved.</p>
       </div>
     </footer>
   );
