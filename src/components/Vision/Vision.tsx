@@ -1,6 +1,5 @@
 import React, { useRef, useEffect } from 'react';
 import { motion } from 'framer-motion';
-
 export function VideoPlayer() {
   const videoRef = useRef(null);
 
@@ -26,12 +25,12 @@ export function VideoPlayer() {
   }, []);
 
   return (
-    <div className="relative w-full h-full rounded-2xl overflow-hidden group">
+    <div className="relative w-full h-full rounded-2xl overflow-hidden group  ">
       <video
         ref={videoRef}
         className="w-full h-full object-cover rounded-2xl"
         controls
-        muted // Keep the video muted initially
+         // Keep the video muted initially
         preload="metadata"
       >
         <source
@@ -85,7 +84,7 @@ export function Vision() {
           </motion.div>
 
           {/* Mission Section - Aligned Left */}
-          <div className="text-left"> {/* Changed from text-right to text-left */}
+          <div className="text-right"> {/* Changed from text-right to text-left */}
             <motion.h2
               initial={{ opacity: 0, x: 20 }}
               whileInView={{ opacity: 1, x: 0 }}

@@ -1,5 +1,3 @@
-import React from 'react';
-
 const Contact = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-navy-900 via-purple-900 to-navy-900 text-white p-8">

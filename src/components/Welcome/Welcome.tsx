@@ -1,6 +1,5 @@
-import React from 'react';
 import { motion } from 'framer-motion';
-
+import './welcome.css'
 export function Welcome() {
   return (
     <div className="relative min-h-screen b overflow-hidden flex items-center">
@@ -13,7 +12,8 @@ export function Welcome() {
       {/* <div className="absolute bottom-1/3 right-1/4 w-96 h-96 bg-blue-600/20 rounded-full blur-[128px]" /> */}
       
       {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
+      <div 
+      className=" gradient-container relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24 text-center">
         <motion.h2 
           initial={{ opacity: 0, y: 20 }}
           whileInView={{ opacity: 1, y: 0 }}

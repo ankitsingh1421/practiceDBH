@@ -16,12 +16,11 @@
 
 /* Add your background styles */
 .gradient-background {
-  background: radial-gradient(
-    circle at center,
-    rgba(0, 0, 51, 0.95) 0%,
-    rgba(51, 0, 102, 0.95) 35%,
-    rgba(0, 0, 51, 0.95) 100%
-  );
+  background: radial-gradient(circle at center,
+  rgba(170, 0, 170, 0.8) 0%,    /* More saturated purple */
+  rgba(15, 15, 80, 0.95) 50%,   /* Darker mid-point */
+  rgba(5, 5, 30, 1) 100%        /* Almost black outer edge */
+);
   position: fixed;
   top: 0;
   left: 0;

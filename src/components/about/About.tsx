@@ -26,7 +26,7 @@ const About = () => {
     },
     {
       name: 'Ankit Singh',
-      role: 'Web Developer',
+      role: 'Lead Full Stack Engineer ',
       image: 'ankit.jpeg',
     },
   ];
