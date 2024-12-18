@@ -9,7 +9,7 @@ import  Linkedin  from '../../Icons/linkedin.png'
 
 const Footer: React.FC = () => {
   return (
-    <footer className="footer">
+    <footer className="footer bg-navy-950/80">
       <div className="footer-container">
         <div className="footer-section">
           <h4>Contact Us</h4>
