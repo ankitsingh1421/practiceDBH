@@ -30,7 +30,7 @@ export function VideoPlayer() {
         ref={videoRef}
         className="w-full h-full object-cover rounded-2xl"
         controls
-         // Keep the video muted initially
+        // Keep the video muted initially
         preload="metadata"
       >
         <source
@@ -60,7 +60,7 @@ export function Vision() {
             >
               Vision
             </motion.h2>
-            
+
             <motion.p
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
@@ -78,7 +78,7 @@ export function Vision() {
             initial={{ opacity: 0, scale: 0.95 }}
             whileInView={{ opacity: 1, scale: 1 }}
             transition={{ duration: 0.6, delay: 0.4 }}
-            style={{ marginLeft: "30%", marginTop: "30px", height: "300px", width: "600px" }}
+            style={{ marginLeft: "20%", marginTop: "30px", height: "300px", width: "600px" }}
             className="w-full aspect-video rounded-2xl overflow-hidden shadow-2xl shadow-purple-500/20"
           >
             <VideoPlayer />
@@ -96,10 +96,10 @@ export function Vision() {
 
             </motion.h2>
             <p className=" text-gray-200 text-xl leading-relaxed mb-16  ">
-      To eradicate singing phobia and empower music lovers by blending Indian
-      classical music with contemporary Bollywood hits through innovative, modern
-      learning methods.
-    </p>
+              To eradicate singing phobia and empower music lovers by blending Indian
+              classical music with contemporary Bollywood hits through innovative, modern
+              learning methods.
+            </p>
           </div>
         </div>
       </div>
