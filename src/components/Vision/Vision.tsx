@@ -45,7 +45,8 @@ export function VideoPlayer() {
 
 export function Vision() {
   return (
-    <div className="relative min-h-screen bg-navy-950 overflow-hidden">
+    // <div className="relative min-h-screen bg-navy-950 overflow-hidden">
+    <div className="relative min-h-screen  overflow-hidden">
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-24">
         <div className="space-y-24">

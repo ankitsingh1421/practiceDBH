@@ -1,6 +1,7 @@
 const Contact = () => {
   return (
-    <div className="min-h-screen bg-gradient-to-br from-navy-900 via-purple-900 to-navy-900 text-white p-8">
+    // <div className="min-h-screen bg-gradient-to-br from-navy-900 via-purple-900 to-navy-900 text-white p-8">
+    <div className="min-h-screen  text-white p-8">
       {/* Contact Header */}
       <div className="text-center mb-16">
         <h1 className="text-4xl md:text-5xl font-bold mb-8">

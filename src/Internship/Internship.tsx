@@ -27,7 +27,7 @@ const Internship = () => {
 
         <div className="intern-card-container">
           {InternData.map((data) => (
-            <InternshipCards key={data.id} img={data.img} title={data.title} />
+            <InternshipCards key={data.id} img={data.img} title={data.title} description={data.description} />
           ))}
         </div>
       </div>

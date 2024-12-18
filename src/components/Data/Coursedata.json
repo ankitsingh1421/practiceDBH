@@ -2,32 +2,42 @@
     {
         "id":"1",
         "img":"/vocalGrooming.png",
-        "title":"Vocal Grooming"
+        "title":"Vocal Grooming",
+        "description":"Learn with us about a music"
     },
     {
         "id":"2",
         "img":"/classical.jpeg",
-        "title":"Classicwood Music"
+        "title":"Classicwood Music",
+        "description":"Learn with us about a music"
     },
     {
         "id":"3",
         "img":"/production.jpeg",
-        "title":"Music Production Program"
+        "title":"Music Production Program",
+        "description":"Learn with us about a music"
+
     } ,
     {
         "id":"4",
         "img":"/classic.jpeg",
-        "title":"Indian Classical Music"
+        "title":"Indian Classical Music",
+        "description":"Learn with us about a music"
+
     },
     {
         "id":"5",
         "img":"/Tabla.jpeg",
-        "title":"Tabla"
+        "title":"Tabla",
+        "description":"Learn with us about a music"
+
     },
     {
         "id":"6",
         "img":"/synthesizer.jpeg",
-        "title":"Synthesizer"
+        "title":"Synthesizer",
+        "description":"Learn with us about a music"
+
     }
 ]
 

@@ -189,18 +189,18 @@ export function Hero() {
   };
 
   return (
-    <div className="relative min-h-screen overflow-hidden" id="home">
+    <div className="relative min-h-screen overflow-hidden bg-navy-900" id="home">
+    {/* <div className="relative min-h-screen overflow-hidden bg-navy-900"  style={{ boxShadow: "0 10px 20px rgba(139, 92, 246, 0.4)" }} id="home"> */}
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-60" style={{marginTop:"-50px"}}>
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="flex-1 text-center md:text-left">
-            <h1 className="text-5xl md:text-6xl font-bold text-white mb-6">
-              <span className="block">Unveiling</span>
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">Voices</span>
+            <h1 className="text-5xl md:text-5xl font-bold text-white mb-6">
+              <span className="block">Unveiling <span className='text-6xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500'>Voices</span></span>
             </h1>
             <h2 className="text-4xl md:text-5xl font-bold text-white mb-8">
               Empowering
-              <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500"> Music</span>
+              <span className="text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500"> Music</span>
             </h2>
             <button
               onClick={() => setFormOpen(true)}
@@ -261,18 +261,7 @@ export function Hero() {
           Close Menu
         </button>
       </div> */}
-      <div className="absolute top-4 right-4 md:hidden">
-  <button
-    onClick={() => setNavOpen(!isNavOpen)}
-    className="text-white focus:outline-none"
-  >
-    {isNavOpen ? (
-      <span className="text-2xl">&times;</span> // Close icon
-    ) : (
-      <span className="text-2xl">&#9776;</span> // Burger menu icon
-    )}
-  </button>
-</div>
+    
 
 {/* Burger Navigation Menu */}
 <div
