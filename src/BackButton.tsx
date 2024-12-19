@@ -1,13 +1,21 @@
 import React from 'react';
+import { useNavigate } from 'react-router-dom';  // Import useNavigate
 
 interface BackButtonProps {
     onClick: () => void;
 }
 
 const BackButton: React.FC<BackButtonProps> = ({ onClick }) => {
+    const navigate = useNavigate();  // Initialize useNavigate hook
+
+    const handleBackClick = () => {
+        navigate('/');  // Redirect to home page
+        onClick();  // Call the passed onClick handler if needed
+    };
+
     return (
         <button
-            onClick={onClick}
+            onClick={handleBackClick}  // Trigger handleBackClick on button click
             className="fixed top-4 left-4 bg-white p-2 rounded-full shadow-md hover:bg-gray-50 z-10"
         >
             <svg

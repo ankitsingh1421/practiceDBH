@@ -7,17 +7,18 @@ interface VideoPlayerProps {
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({ videoUrl, title }) => {
     return (
-        <div className="mx-[100px] mt-10">
-            <div className="w-full aspect-video bg-black rounded-lg overflow-hidden shadow-lg">
-                <video
-                    className="w-full h-full object-contain"
-                    controls
+        <div className="mx-[20px] sm:mx-[40px] md:mx-[100px] ">
+            <div className="w-full aspect-video bg-transparent rounded-lg overflow-hidden shadow-lg">
+                <img
+                    style={{
+                        borderRadius: "20px"
+                    }}
+                    className="w-full h-full object-cover"
                     src={videoUrl}
-                >
-                    Your browser does not support the video tag.
-                </video>
+                    alt={title}
+                />
             </div>
-            <h2 className="text-xl font-semibold mt-4 text-center">{title}</h2>
+            <h2 className="text-xl text-white font-semibold mt-4 text-center">{title}</h2>
         </div>
     );
 };

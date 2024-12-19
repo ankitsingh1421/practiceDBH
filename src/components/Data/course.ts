@@ -6,7 +6,7 @@ export const courses: Course[] = [
         title: 'Web Development Fundamentals',
         description: 'Master the basics of web development with HTML, CSS, and JavaScript',
         image: 'https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?auto=format&fit=crop&w=800&q=80',
-        demoVideo: 'https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4',
+        demoVideo: '/comingsoon.jpeg',
         highlights: [
             'Build responsive websites from scratch',
             'Learn modern JavaScript ES6+',

@@ -2,10 +2,11 @@ import React from 'react';
 // import { Link } from 'react-router-dom';
 import './Footer.css';
 import { Link as ScrollLink } from 'react-scroll'; // Import react-scroll's Link
-import  Facebook  from '../../Icons/facebook.png'
-import  Instagram  from '../../Icons/instagram.png'
-import  Twitter  from '../../Icons/twitter.png'
-import  Linkedin  from '../../Icons/linkedin.png'
+import Facebook from '../../Icons/facebook.png'
+import Instagram from '../../Icons/instagram.png'
+import Twitter from '../../Icons/twitter.png'
+import Linkedin from '../../Icons/linkedin.png'
+import LegalLinks from '../LegalLink/LegalLinks';
 
 const Footer: React.FC = () => {
   return (
@@ -32,33 +33,34 @@ const Footer: React.FC = () => {
             <li><Link to="/about">About Us</Link></li>
             <li><Link to="/contact">Contact</Link></li> */}
             <li>
-            <ScrollLink to="home" smooth={true} duration={500} className="text-white cursor-pointer">
-              Home
-            </ScrollLink>
+              <ScrollLink to="home" smooth={true} duration={500} className="text-white cursor-pointer">
+                Home
+              </ScrollLink>
             </li>
             <li>
-            <ScrollLink to="courses" smooth={true} duration={500} className="text-white cursor-pointer">
-              Courses
-                
-            </ScrollLink>
+              <ScrollLink to="courses" smooth={true} duration={500} className="text-white cursor-pointer">
+                Courses
+
+              </ScrollLink>
             </li>
             <li>
 
-            <ScrollLink to="about" smooth={true} duration={500} className="text-white cursor-pointer">
-              About
-            </ScrollLink>
+              <ScrollLink to="about" smooth={true} duration={500} className="text-white cursor-pointer">
+                About
+              </ScrollLink>
             </li>
             <li>
 
-            <ScrollLink to="blog" smooth={true} duration={500} className="text-white cursor-pointer">
-              Blog
-            </ScrollLink>
+              <ScrollLink to="blog" smooth={true} duration={500} className="text-white cursor-pointer">
+                Blog
+              </ScrollLink>
             </li>
           </ul>
         </div>
       </div>
       <div className="footer-bottom">
-        <p>&copy; 2024 DecodingBollywoodHits website. All rights reserved.</p>
+        <p><LegalLinks />
+        </p>
       </div>
     </footer>
   );

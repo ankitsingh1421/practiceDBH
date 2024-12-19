@@ -347,10 +347,10 @@ const About = () => {
   }, []);
 
   const teamMembers = [
-    { name: 'Srijan Sakshi', role: 'Operations & Event Management', image: 'sakshi.jpeg' },
-    { name: 'Sanskar Saswat', role: 'Founder', image: 'sanskar.jpeg' },
-    { name: 'Roopkatha Roy', role: 'Co-Founder', image: 'roop.jpeg' },
-    { name: 'Ankit Singh', role: 'Lead Full Stack Engineer', image: 'ankit.jpeg' },
+    { name: 'Srijan Sakshi', role: 'Vice-Presedent Operations & Event Marketing ', image: 'sakshi.jpeg' },
+    { name: 'Sanskar Saswat', role: 'Chief Executive Officer ', image: 'sanskar.jpeg' },
+    { name: 'Roopkatha Roy', role: 'Chief Operating Officer', image: 'roop.jpeg' },
+    { name: 'Ankit Singh', role: 'Chief Technology Officer', image: 'ankit.jpeg' },
   ];
 
   const cloneContent = () => {

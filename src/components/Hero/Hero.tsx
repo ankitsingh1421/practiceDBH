@@ -24,7 +24,7 @@
 //     <div className="relative min-h-screen  overflow-hidden "id='home'>
 //       {/* Gradient Background */}
 //       {/* <div className="absolute inset-0 bg-gradient-to-br from-blue-900/20 via-purple-900/20 to-pink-900/20" /> */}
-      
+
 //       {/* Content */}
 //       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-60">
 //         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
@@ -49,18 +49,18 @@
 //               {/* Enhanced Glow Effects */}
 //               <div className="absolute inset-0 blur-[160px] bg-blue-600/50 rounded-full" />
 //               <div className="absolute inset-0 blur-[100px] bg-purple-600/40 rounded-full" />
-              
+
 //               <div className="absolute inset-0 animate-spin-slow">
 //                 <CircleAnimation />
 //               </div>
-              
+
 //               {/* Main Circle with Enhanced Shadow */}
 //               <div className="relative w-full h-full rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-[2px]">
 //                 <div className="w-full h-full rounded-full bg-navy-950 flex items-center justify-center shadow-[0_0_150px_rgba(37,99,235,0.5)] relative">
 //                   {/* Additional Inner Shadows */}
 //                   <div className="absolute inset-0 rounded-full shadow-[inset_0_0_60px_rgba(37,99,235,0.3)]" />
 //                   <div className="absolute inset-0 rounded-full shadow-[0_0_80px_rgba(139,92,246,0.4)]" />
-                  
+
 //                   <Logo />
 //                 </div>
 //               </div>
@@ -82,9 +82,9 @@
 //             >
 //               &times;
 //             </button>
-            
+
 //             <h2 className="text-lg font-bold mb-3">Enquiry Form</h2>
-            
+
 //             <form className="space-y-3">
 //               <div>
 //                 <label htmlFor="name" className="block text-sm font-medium text-gray-700">
@@ -97,7 +97,7 @@
 //                   placeholder="Enter your name"
 //                 />
 //               </div>
-              
+
 //               <div>
 //                 <label htmlFor="email" className="block text-sm font-medium text-gray-700">
 //                   Email
@@ -109,7 +109,7 @@
 //                   placeholder="Enter your email"
 //                 />
 //               </div>
-              
+
 //               <div>
 //                 <label htmlFor="number" className="block text-sm font-medium text-gray-700">
 //                   Phone Number
@@ -121,7 +121,7 @@
 //                   placeholder="Enter your phone number"
 //                 />
 //               </div>
-              
+
 //               <div>
 //                 <label htmlFor="course" className="block text-sm font-medium text-gray-700">
 //                   Select a Course
@@ -143,7 +143,7 @@
 //                   <option>Music Production Program</option>
 //                 </select>
 //               </div>
-              
+
 //               <button
 //                 type="submit"
 //                 className="w-full bg-purple-600 text-white py-2 px-4 rounded-md hover:bg-purple-700 text-sm"
@@ -189,10 +189,10 @@ export function Hero() {
   };
 
   return (
-    <div className="relative min-h-screen overflow-hidden bg-navy-900" id="home">
-    {/* <div className="relative min-h-screen overflow-hidden bg-navy-900"  style={{ boxShadow: "0 10px 20px rgba(139, 92, 246, 0.4)" }} id="home"> */}
+    <div className="relative min-h-screen overflow-hidden bg-navy-900 sm:height-100px" id="home">
+      {/* <div className="relative min-h-screen overflow-hidden bg-navy-900"  style={{ boxShadow: "0 10px 20px rgba(139, 92, 246, 0.4)" }} id="home"> */}
       {/* Content */}
-      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-60" style={{marginTop:"-50px"}}>
+      <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-60" style={{ marginTop: "-50px" }}>
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
           <div className="flex-1 text-center md:text-left">
             <h1 className="text-5xl md:text-5xl font-bold text-white mb-6">
@@ -261,27 +261,26 @@ export function Hero() {
           Close Menu
         </button>
       </div> */}
-    
 
-{/* Burger Navigation Menu */}
-<div
-  className={`fixed inset-0 bg-black/60 flex flex-col items-center justify-center z-50 transition-transform ${
-    isNavOpen ? 'translate-y-0' : '-translate-y-full'
-  }`}
->
-  <button
-    onClick={() => setFormOpen(true)}
-    className="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-8 py-3 rounded-full text-lg font-medium hover:opacity-90 transition-opacity mb-4"
-  >
-    Enquire Now
-  </button>
-  <button
-    onClick={() => setNavOpen(false)}
-    className="text-white px-8 py-3 rounded-full text-lg font-medium hover:opacity-90"
-  >
-    Close Menu
-  </button>
-</div>
+
+      {/* Burger Navigation Menu */}
+      <div
+        className={`fixed inset-0 bg-black/60 flex flex-col items-center justify-center z-50 transition-transform ${isNavOpen ? 'translate-y-0' : '-translate-y-full'
+          }`}
+      >
+        <button
+          onClick={() => setFormOpen(true)}
+          className="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-8 py-3 rounded-full text-lg font-medium hover:opacity-90 transition-opacity mb-4"
+        >
+          Enquire Now
+        </button>
+        <button
+          onClick={() => setNavOpen(false)}
+          className="text-white px-8 py-3 rounded-full text-lg font-medium hover:opacity-90"
+        >
+          Close Menu
+        </button>
+      </div>
 
 
       {isFormOpen && (
