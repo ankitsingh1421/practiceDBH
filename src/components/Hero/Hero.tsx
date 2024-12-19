@@ -194,7 +194,7 @@ export function Hero() {
       {/* Content */}
       <div className="relative max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 pt-60" style={{ marginTop: "-50px" }}>
         <div className="flex flex-col md:flex-row items-center justify-between gap-12">
-          <div className="flex-1 text-center md:text-left">
+          {/* <div className="flex-1 text-center md:text-left">
             <h1 className="text-5xl md:text-5xl font-bold text-white mb-6">
               <span className="block">Unveiling <span className='text-6xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500'>Voices</span></span>
             </h1>
@@ -225,42 +225,52 @@ export function Hero() {
                 </div>
               </div>
             </div>
+          </div> */}
+
+          <div className="flex-1 text-center md:text-left">
+            <h1 className="text-4xl md:text-5xl font-bold text-white mb-6">
+              <span className="block">
+                Unveiling <span className="text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-purple-400 to-pink-500">
+                  Voices
+                </span>
+              </span>
+            </h1>
+            <h2 className="text-3xl md:text-5xl font-bold text-white mb-8">
+              Empowering
+              <span className="text-5xl md:text-6xl text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-500">
+                Music
+              </span>
+            </h2>
+            <button
+              onClick={() => setFormOpen(true)}
+              className="hidden md:block bg-gradient-to-r from-purple-600 to-pink-500 text-white px-8 py-3 rounded-full text-lg font-medium hover:opacity-90 transition-opacity"
+            >
+              Enquire Now
+            </button>
           </div>
+
+          <div className="flex-1 relative flex items-center justify-center">
+            <div className="relative w-48 h-48 md:w-72 md:h-72 -mt-8 md:-mt-0"> {/* Adjust margin for mobile */}
+              <div className="absolute inset-0 blur-[160px] bg-blue-600/50 rounded-full" />
+              <div className="absolute inset-0 blur-[100px] bg-purple-600/40 rounded-full" />
+              <div className="absolute inset-0 animate-spin-slow">
+                <CircleAnimation />
+              </div>
+              <div className="relative w-full h-full rounded-full bg-gradient-to-br from-blue-500 via-purple-500 to-pink-500 p-[2px]">
+                <div className="w-full h-full rounded-full bg-navy-950 flex items-center justify-center shadow-[0_0_150px_rgba(37,99,235,0.5)] relative">
+                  <div className="absolute inset-0 rounded-full shadow-[inset_0_0_60px_rgba(37,99,235,0.3)]" />
+                  <div className="absolute inset-0 rounded-full shadow-[0_0_80px_rgba(139,92,246,0.4)]" />
+                  <Logo />
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+
         </div>
       </div>
-
-      {/* Burger Menu and Navigation */}
-      {/* <div className="absolute top-4 right-4 md:hidden">
-        <button
-          onClick={() => setNavOpen(!isNavOpen)}
-          className="text-white focus:outline-none"
-        >
-          {isNavOpen ? (
-            <span className="text-2xl">&times;</span> // Close icon
-          ) : (
-            <span className="text-2xl">&#9776;</span> // Burger menu icon
-          )}
-        </button>
-      </div>
-
-      <div
-        className={`fixed inset-0 bg-black/60 flex flex-col items-center justify-center z-50 transition-transform ${
-          isNavOpen ? 'translate-y-0' : '-translate-y-full'
-        }`}
-      >
-        <button
-          onClick={() => setFormOpen(true)}
-          className="bg-gradient-to-r from-purple-600 to-pink-500 text-white px-8 py-3 rounded-full text-lg font-medium hover:opacity-90 transition-opacity mb-4"
-        >
-          Enquire Now
-        </button>
-        <button
-          onClick={() => setNavOpen(false)}
-          className="text-white px-8 py-3 rounded-full text-lg font-medium hover:opacity-90"
-        >
-          Close Menu
-        </button>
-      </div> */}
 
 
       {/* Burger Navigation Menu */}
