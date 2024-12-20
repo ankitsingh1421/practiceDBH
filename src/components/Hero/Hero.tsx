@@ -14,7 +14,7 @@ export function Hero() {
         if (!isFormSubmitted && !isFormOpen) {
           setFormOpen(true); // Open form only if it's not already open and not submitted
         }
-      }, 15000); // 3 seconds interval
+      }, 55000); // 3 seconds interval
 
       return () => clearTimeout(timer);
     }
@@ -284,7 +284,6 @@ export function Hero() {
                     <option>Music Production Program</option>
                   </select>
                 </div>
-
                 <button
                   type="submit"
                   className="w-full bg-purple-600 text-white py-2 px-4 rounded-md hover:bg-purple-700 text-sm"

@@ -1,41 +1,32 @@
 [
     {
         "id": "1",
-        "img": "/vocalGrooming.png",
-        "title": "Vocal Grooming",
-        "description": "Learn with us about a music"
+        "img": "/synthesizer.jpeg",
+        "title": "Synthesizer",
+        "description": "Unlock the magic of electronic melodies and create immersive soundscapes"
     },
     {
         "id": "2",
-        "img": "/classical.jpeg",
-        "title": "Classicwood Music",
-        "description": "Learn with us about a music"
-    },
-    {
-        "id": "3",
-        "img": "/production.jpeg",
-        "title": "Music Production Program",
-        "description": "Learn with us about a music"
-    },
-    {
-        "id": "4",
-        "img": "/classic.jpeg",
-        "title": "Indian Classical Music",
-        "description": "Learn with us about a music"
+        "img": "/Tabla.jpeg",
+        "title": "Tabla",
+        "description": "Master the beats of tradition and rhythm to tell timeless stories"
     },
     {
         "id": "5",
-        "img": "/Tabla.jpeg",
-        "title": "Tabla",
-        "description": "Learn with us about a music"
+        "img": "/Guitar.jpeg",
+        "title": "Guitar",
+        "description": "Strum your way to soulful expressions and captivating tunes"
     },
     {
         "id": "6",
-        "img": "/synthesizer.jpeg",
-        "title": "Synthesizer",
+        "img": "/classic.jpeg",
+        "title": "Indian Classical Music",
+        "description": "Embark on a journey of sacred soundscapes and timeless ragas"
+    },
+    {
+        "id": "10",
+        "img": "/classical.jpeg",
+        "title": "Classiwood Music",
         "description": "Learn with us about a music"
     }
 ]
-
-
-
