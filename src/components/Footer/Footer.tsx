@@ -20,10 +20,10 @@ const Footer: React.FC = () => {
         <div className="footer-section">
           <h4>Follow Us</h4>
           <div className="social-links">
-            <a href="https://www.facebook.com/profile.php?id=100069534045314" target="_blank" rel="noopener noreferrer">Facebook</a>
+            <a href="https://www.facebook.com" target="_blank" rel="noopener noreferrer">Facebook</a>
             <a href="https://www.twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
-            <a href="https://www.instagram.com/pawanbeniwal536/" target="_blank" rel="noopener noreferrer">Instagram</a>
-            <a href="https://www.linkedin.com/in/pawan-beniwal-a38327305" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+            <a href="https://www.instagram.com/sanskar_saswat?igsh=MW1tc2k5ZjA0dDVkeg==" target="_blank" rel="noopener noreferrer">Instagram</a>
+            <a href="https://www.linkedin.com/in/sanskar-saswat-47a61725a/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
           </div>
         </div>
         <div className="footer-section">
