@@ -1,5 +1,5 @@
 import React from 'react';
-
+import './components/Courses/Videoplayer.css'
 interface VideoPlayerProps {
     videoUrl: string;
     title: string;
@@ -7,11 +7,14 @@ interface VideoPlayerProps {
 
 const VideoPlayer: React.FC<VideoPlayerProps> = ({ videoUrl, title }) => {
     return (
-        <div className="mx-[20px] sm:mx-[40px] md:mx-[100px] ">
-            <div className="w-full aspect-video bg-transparent rounded-lg overflow-hidden shadow-lg">
+        <div className="flex flex-col items-center mx-auto">
+            <div
+                className="w-[800px] h-[400px] bg-transparent rounded-lg overflow-hidden shadow-lg other"
+                style={{ marginTop: '100px' }}
+            >
                 <img
                     style={{
-                        borderRadius: "20px"
+                        borderRadius: "20px",
                     }}
                     className="w-full h-full object-cover"
                     src={videoUrl}

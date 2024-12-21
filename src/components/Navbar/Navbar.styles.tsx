@@ -7,7 +7,7 @@ interface LinkProps {
 
 export function Link({ href, children }: LinkProps) {
   return (
-    <a 
+    <a
       href={href}
       className="text-gray-300 hover:text-white transition-colors duration-200 text-sm font-medium"
     >

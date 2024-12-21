@@ -1,6 +1,6 @@
 export const WHATSAPP_CONFIG = {
     phoneNumber: '9836311375',
-    defaultMessage: ' ',
+    defaultMessage: 'Hii Saswat, i want to Know more about DecodingBollywoodHits (DBH) ',
     popupDuration: 3000, // 3 seconds
     popupInterval: 10000, // 20 seconds
 };
