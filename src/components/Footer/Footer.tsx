@@ -29,9 +29,6 @@ const Footer: React.FC = () => {
         <div className="footer-section">
           <h4>Quick Links</h4>
           <ul>
-            {/* <li><Link to="/">Home</Link></li>
-            <li><Link to="/about">About Us</Link></li>
-            <li><Link to="/contact">Contact</Link></li> */}
             <li>
               <ScrollLink to="home" smooth={true} duration={500} className="text-white cursor-pointer">
                 Home

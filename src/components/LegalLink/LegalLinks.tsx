@@ -1,8 +1,8 @@
 import React from 'react';
 import { useModal } from '../../hooks/useModal';
 import Modal from '../Modal';
-import PrivacyPolicy from './PrivacyPolicy';
 import TermsConditions from './TermsConditions';
+import CancellationAndRefundPolicy from './PrivacyPolicy';
 
 const LegalLinks: React.FC = () => {
     const {
@@ -31,7 +31,7 @@ const LegalLinks: React.FC = () => {
                 onClick={openPrivacy}
                 className="underline hover:text-gray-200"
             >
-                Privacy Policy
+                Cancellation And Refund Policy
             </button>
 
             <Modal isOpen={isTermsOpen} onClose={closeTerms} title="Terms & Conditions">
@@ -39,7 +39,7 @@ const LegalLinks: React.FC = () => {
             </Modal>
 
             <Modal isOpen={isPrivacyOpen} onClose={closePrivacy} title="Privacy Policy">
-                <PrivacyPolicy />
+                <CancellationAndRefundPolicy />
             </Modal>
         </div>
     );
