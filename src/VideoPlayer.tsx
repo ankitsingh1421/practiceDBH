@@ -1,11 +1,19 @@
 import React from 'react';
 import './components/Courses/Videoplayer.css'
+import PriceCard from './components/PriceCard/PriceCard';
+
 interface VideoPlayerProps {
     videoUrl: string;
     title: string;
+    price: {
+        amount: number;
+        originalAmount: number;
+        discount: string;
+        currency: string;
+    };
 }
 
-const VideoPlayer: React.FC<VideoPlayerProps> = ({ videoUrl, title }) => {
+const VideoPlayer: React.FC<VideoPlayerProps> = ({ videoUrl, title, price }) => {
     return (
         <div className="flex flex-col items-center mx-auto">
             <div
@@ -20,8 +28,20 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ videoUrl, title }) => {
                     src={videoUrl}
                     alt={title}
                 />
+
             </div>
-            <h2 className="text-xl text-white font-semibold mt-4 text-center">{title}</h2>
+            <div style={{ display: 'flex' }}>
+                <h2 className=" bg-blur p-6 rounded-lg shadow-md w-80 text-xl text-white font-semibold mt-4 text-center">{title}</h2>
+                <span>
+                    <PriceCard
+                        price={price.amount}
+                        originalPrice={price.originalAmount}
+                        discount={price.discount}
+                        currency={price.currency}
+                    />
+                </span>
+
+            </div>
         </div>
     );
 };

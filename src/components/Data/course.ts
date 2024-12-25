@@ -7,6 +7,12 @@ export const courses: Course[] = [
         description: 'This comprehensive synthesizer program from Decoding Bollywood Hits Academy equips you with the skills to master the art of playing the synthesizer, with a special focus on Bollywood music. From understanding the instrument\'s basics to crafting iconic Bollywood melodies, this course is tailored for aspiring musicians and professionals alike.',
         image: 'https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?auto=format&fit=crop&w=800&q=80',
         demoVideo: '/comingsoon.jpeg',
+        price: {
+            amount: 999,
+            originalAmount: 1999,
+            discount: "50%",
+            currency: "INR",
+        },
         highlights: [
             'Instrument Fundamentals: Learn the structure and functions of a synthesizer.',
             'Bollywood Styling: Understand the unique textures and sounds of Bollywood music.',
@@ -170,6 +176,12 @@ export const courses: Course[] = [
         description: 'Explore the magic of the guitar with a Bollywood twist! This program at Decoding Bollywood Hits Academy teaches you to play iconic Bollywood melodies and rhythms while building a strong foundation in guitar techniques. From soulful ballads to foot-tapping hits, this course will transform you into a versatile guitarist with a Bollywood edge.',
         image: 'https://images.unsplash.com/photo-1593696140820-062e5f3341a3?auto=format&fit=crop&w=800&q=80',
         demoVideo: '/comingsoon.jpeg',
+        price: {
+            amount: 999,
+            originalAmount: 1999,
+            discount: "50%",
+            currency: "INR",
+        },
         highlights: [
             'Essential Guitar Techniques: Master chords, scales, and strumming patterns.',
             'Bollywood Styles: Learn to play famous Bollywood songs across genres.',
@@ -354,6 +366,12 @@ export const courses: Course[] = [
         description: 'Explore the magic of the guitar with a Bollywood twist! This program at Decoding Bollywood Hits Academy teaches you to play iconic Bollywood melodies and rhythms while building a strong foundation in guitar techniques. From soulful ballads to foot-tapping hits, this course will transform you into a versatile guitarist with a Bollywood edge.',
         image: 'https://images.unsplash.com/photo-1593696140820-062e5f3341a3?auto=format&fit=crop&w=800&q=80',
         demoVideo: '/comingsoon.jpeg',
+        price: {
+            amount: 999,
+            originalAmount: 1999,
+            discount: "50%",
+            currency: "INR",
+        },
         highlights: [
             'Comprehensive Understanding: In-depth lessons on Indian classical music and its influence on Bollywood songs',
             'Raga Exploration: Detailed study of major ragas and their application in popular Bollywood hits',
@@ -578,6 +596,12 @@ export const courses: Course[] = [
         description: 'Explore the magic of the guitar with a Bollywood twist! This program at Decoding Bollywood Hits Academy teaches you to play iconic Bollywood melodies and rhythms while building a strong foundation in guitar techniques. From soulful ballads to foot-tapping hits, this course will transform you into a versatile guitarist with a Bollywood edge.',
         image: 'https://images.unsplash.com/photo-1593696140820-062e5f3341a3?auto=format&fit=crop&w=800&q=80',
         demoVideo: '/comingsoon.jpeg',
+        price: {
+            amount: 999,
+            originalAmount: 1999,
+            discount: "50%",
+            currency: "INR",
+        },
         highlights: [
             'Comprehensive Learning: A unique fusion of two rich musical worlds — Indian Classical and Bollywood.',
             'Interactive Modules: Practical sessions for vocal and instrumental training',
@@ -804,6 +828,12 @@ export const courses: Course[] = [
         description: 'The Tabla Curriculum at Decoding Bollywood Hits Academy is an immersive program focused on mastering the art of tabla playing with a unique Bollywood twist. This program explores traditional rhythms and their fusion into Bollywood music, providing both theoretical and practical training.',
         image: 'https://images.unsplash.com/photo-1593720219276-0b1eacd0aef4?auto=format&fit=crop&w=800&q=80',
         demoVideo: '/comingsoon.jpeg',
+        price: {
+            amount: 999,
+            originalAmount: 1999,
+            discount: "50%",
+            currency: "INR",
+        },
         highlights: [
             'In-Depth Tabla Training: Detailed lessons on technique, rhythm, and improvisation.',
             'Bol Patterns & Rhythms: Explore the fundamental rhythm structures of tabla.',

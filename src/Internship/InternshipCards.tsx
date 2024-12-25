@@ -144,7 +144,8 @@ const InternshipCards: React.FC<CourseCardProps> = ({ course }) => {
         <img
           src={course.img}
           alt={course.title}
-          className="w-full h-48 -over"
+          className="w-full h-48 "
+          style={{ objectFit: "cover" }}
         />
         <div className="p-6">
           <h3 className="text-xl font-bold mb-2">{course.title}</h3>

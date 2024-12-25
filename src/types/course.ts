@@ -11,6 +11,7 @@ export interface Video {
   }
   
   export interface Course {
+    price: unknown;
     id: string;
     title: string;
     description: string;
